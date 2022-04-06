@@ -1,0 +1,13 @@
+@api=http://localhost:3000
+
+###
+GET {{api}}/users
+
+###
+POST {{api}}/users
+Content-Type: application/json
+
+{
+  "email": "thanhhieu0195@gmail.com",
+  "password": "abcd1234"
+}

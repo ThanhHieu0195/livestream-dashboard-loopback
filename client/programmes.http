@@ -1,0 +1,12 @@
+@api=http://localhost:3000
+
+###
+GET {{api}}/programmes
+
+###
+POST {{api}}/programmes
+Content-Type: application/json
+
+{
+  "name": "The first programme"
+}

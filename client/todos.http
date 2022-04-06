@@ -1,0 +1,21 @@
+@api=http://localhost:3000
+
+### FIND
+GET {{api}}/todos
+
+### Count
+GET {{api}}/todos/count
+
+### GET
+GET {{api}}/todos/1
+
+
+### UPDATE
+PATCH {{api}}/todos/1
+Content-Type: application/json
+
+{
+  "title": "EDIT 123"
+}
+
+

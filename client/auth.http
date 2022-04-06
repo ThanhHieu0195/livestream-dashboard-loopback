@@ -1,0 +1,19 @@
+@api=http://localhost:3000
+
+
+# @name getAuth
+POST {{api}}/auth
+Content-Type: application/json
+
+{
+  "email": "thanhhieu0195@gmail.com",
+  "password": "abcd1234"
+}
+
+###
+@token={{getAuth.response.body.token}}
+
+
+###
+GET {{api}}/programmes
+Authorization: Bearer {{token}}

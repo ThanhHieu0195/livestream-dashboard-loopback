@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "Run Dev",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "yarn",
+      "args": ["dev"]
+    },
+  ]
+}
